@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3024316896505492437
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7079919218563593500, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_Name
+      value: Knife
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079919218563593500, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079919218563593500, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.30465496
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.0634255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9848078
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.17364816
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569211391400341414, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7079919218563593500, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4102612656147644308}
+  m_SourcePrefab: {fileID: 100100000, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+--- !u!1 &5456222227078465225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7079919218563593500, guid: 0bcdc7d174ff79641a4487a022f363d6, type: 3}
+  m_PrefabInstance: {fileID: 3024316896505492437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4102612656147644308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5456222227078465225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2992cdf741e0974ab723c241e5b7cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combo:
+  - {fileID: 11400000, guid: 2d3ddb1f582659a438e7a58fc0073052, type: 2}
+  - {fileID: 11400000, guid: 028935d97c2244b47a336ce7a6725df5, type: 2}
+  - {fileID: 11400000, guid: 9e4aa63e3ce37054e8c160768e54a6a9, type: 2}
+  attackLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  holdingWeaponHandler: {fileID: 0}
+  weaponType: 0
