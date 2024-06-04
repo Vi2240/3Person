@@ -8,12 +8,16 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private Slider healthSlider; // Reference to the UI slider for health
 
+    [SerializeField] GameObject lose;
+
     private float currentHealth;
 
     void Start()
     {
         currentHealth = maxHealth;
         UpdateHealthUI();
+
+        lose.SetActive(false);
     }
 
     public void TakeDamage(float damage)
@@ -31,7 +35,11 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         // Handle player death, such as respawning
-        Debug.Log("Player died!");
+        //Debug.Log("Player died!");
+
+        lose.SetActive(true);
+        Cursor.lockState = CursorLockMode.None; // Unlock the cursor
+        Cursor.visible = true;                  // Make the cursor visible
     }
 
     void UpdateHealthUI()

@@ -21,6 +21,8 @@ public class HitScanWeapon : Weapon
     [SerializeField] private GameObject realMag;
     [SerializeField] private GameObject fakeMag;
 
+    [SerializeField] SettingsScriptableObject settingsScriptableObject;
+
     private Camera mainCamera;
 
     protected new void Start()
@@ -138,6 +140,7 @@ public class HitScanWeapon : Weapon
     {
         if (fireSound != null && fireSoundClip != null)
         {
+            fireSound.volume = settingsScriptableObject.sfxVolume;
             fireSound.PlayOneShot(fireSoundClip);
             fireSoundTimer = 0f; // Reset the timer
         }
